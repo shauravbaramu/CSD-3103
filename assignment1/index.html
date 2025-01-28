@@ -5,6 +5,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+      #coordinates {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: lightgray;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      #tableContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1 style="text-align: center;">Assignment 1</h1>
@@ -30,6 +56,39 @@
             <h2>Question 2</h2><br>
             <button id="create" onclick="createAndAppendParagraph()">Create and Append Paragraph</button>
         </div>
+
+        <div class="question3">
+          <h2>Question 3</h2><br>
+          <button id="removeById" onclick="removeElementById('textfield1')">Remove Element by ID</button>
+      </div>
+
+      <div class="question4">
+        <h2>Question 4</h2><br>
+        <button id="clickMeButton">Click Me</button>
+      </div>
+
+      <div class="question5">
+        <h2>Question 5</h2><br>
+        <button id="hoverButton">Hover Your Mouse Here</button>
+      </div>
+
+      <div id="question6">
+        <h2>Question 6</h2><br>
+        X: 0, Y: 0
+      </div>
+
+      <div class="question7">
+        <h2>Question 7</h2><br>
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" min="1" required>
+        <label for="columns">Columns:</label>
+        <input type="number" id="columns" min="1" required>
+        <button id="createTableButton">Create Table</button>
+
+        <div id="tableContainer"></div>
+      </div>
+
+
     </div>    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
