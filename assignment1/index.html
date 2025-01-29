@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style>
+      /* Styles for the coordinates display */
       #coordinates {
         position: fixed;
         bottom: 10px;
@@ -15,12 +16,14 @@
         padding: 5px;
         border: 1px solid black;
       }
+      /* Styles for centering the table */
       #tableContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
       }
+      /* Styles for the table */
       table {
         border-collapse: collapse;
         width: 50%;
@@ -35,6 +38,7 @@
   <body>
     <h1 style="text-align: center;">Assignment 1</h1>
     <div class="container" style="text-align: center;">
+        <!-- Question 1: Textfields and buttons to remove/add textfields -->
         <div class="question1">
             <h2>Question 1</h2>
             <div class="textfield">
@@ -52,31 +56,37 @@
             <button id="add" onclick="addTextfield()" hidden>Add Textfields</button>
         </div>
 
+        <!-- Question 2: Button to create and append a paragraph -->
         <div class="question2">
             <h2>Question 2</h2><br>
             <button id="create" onclick="createAndAppendParagraph()">Create and Append Paragraph</button>
         </div>
 
+        <!-- Question 3: Button to remove an element by ID -->
         <div class="question3">
           <h2>Question 3</h2><br>
           <button id="removeById" onclick="removeElementById('textfield1')">Remove Element by ID</button>
       </div>
 
+      <!-- Question 4: Button to add a paragraph on click -->
       <div class="question4">
         <h2>Question 4</h2><br>
         <button id="clickMeButton">Click Me</button>
       </div>
 
+      <!-- Question 5: Button to change background color on hover and duplicate on click -->
       <div class="question5">
         <h2>Question 5</h2><br>
         <button id="hoverButton">Hover Your Mouse Here</button>
       </div>
 
+      <!-- Question 6: Display mouse coordinates -->
       <div id="question6">
         <h2>Question 6</h2><br>
         X: 0, Y: 0
       </div>
 
+      <!-- Question 7: Inputs and button to create a table -->
       <div class="question7">
         <h2>Question 7</h2><br>
         <label for="rows">Rows:</label>
@@ -87,8 +97,6 @@
 
         <div id="tableContainer"></div>
       </div>
-
-
     </div>    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
