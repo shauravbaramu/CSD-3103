@@ -11,8 +11,8 @@ http.createServer(function (req, res) {
         fs.readFile(filePath, function(err, data) { 
             if (err) {
                 // If there is an error reading the file, send a 500 response
-                res.writeHead(500, {'Content-Type': 'text/plain'});
-                res.write('Internal Server Error, File could not be found');
+                res.writeHead(500, {'Content-Type': 'text/html'});
+                res.write('<p style="color: red;">The page you requested is not available</p>');
                 res.end();
             } else {
                 // If the file is read successfully, send the contents as the response
