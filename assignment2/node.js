@@ -12,7 +12,7 @@ http.createServer(function (req, res) {
             if (err) {
                 // If there is an error reading the file, send a 500 response
                 res.writeHead(500, {'Content-Type': 'text/plain'});
-                res.write('Internal Server Error, File could not found');
+                res.write('Internal Server Error, File could not be found');
                 res.end();
             } else {
                 // If the file is read successfully, send the contents as the response
