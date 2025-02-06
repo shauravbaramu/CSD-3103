@@ -29,6 +29,6 @@ http.createServer(function (req, res) {
     }
 
 // The server listens on port 8080 for incoming connections
-}).listen(5000, function() {
-    console.log('Server is listening on port 5000');
+}).listen(3000, function() {
+    console.log('Server is listening on port 3000');
 });
